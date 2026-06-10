@@ -1,0 +1,89 @@
+<html lang="en"><head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Games - Landon M.</title>
+	<link rel="stylesheet" href="./styles/portfoliostylings.css">
+	<script src="./scripts/portfolioscript.js"></script>
+	<link rel="icon" type="image/x-icon" href="yinyang_flavicon.png">
+	
+
+</head>
+<body onload="setActive()">
+    <header>
+	        <div class="hdrcontainer" id="headerDiv">
+		     	<h1 onmouseover="titleExpand()" onmouseout="titleRetract()" id="hdrtitle">Landon M.</h1>
+		     	<img src="./images/peacetobalance_headerpng.png" style="width: auto; height: 80px;">
+		     	<nav>
+	       	        <ul>
+	       	            <li><a href="https://landonmcco.com/">About</a></li>
+	       	            <li><a href="./pages/uiux.html">UI/UX</a></li>
+	       	            <li><a href="./pages/stories.html">Stories</a></li>
+	       	            <li><a href="./pages/games.html">Games</a></li>
+	       	        </ul>
+	       	    </nav>
+		    </div>
+		    <div class="hdrcontainer" id="extraHeaderDiv">
+   	            <nav>
+	       	        <ul>
+	       	            <li id="aboutTab"><a href="https://landonmcco.com/">About</a></li>
+	       	            <li><a href="./pages/uiux.html">UI/UX</a></li>
+	       	            <li><a href="./pages/stories.html">Stories</a></li>
+	       	            <li><a href="./pages/games.html">Games</a></li>
+	       	        </ul>
+	       	        <h1 onmouseover="titleExpand()" onmouseout="titleRetract()" id="hdrtitle">Landon M.</h1>
+    		     	<img id="peacetobalanceheader" src="./images/peacetobalance_headerpng.png" style="width: auto; height: 80px;">
+    		     	<img id="peacetobalanceheadermobile" src="./images/peacetobalance_headerpng.png" style="width: auto; height: 80px;">
+    		     </nav>
+	   	    </div>
+	   	</header>
+	<div class="container">
+		<div class="row main" style="min-height: 863px;">
+		    <h1 style="text-align: center; color: #000000; padding-bottom: 20px; border-bottom: 5px solid;">Games</h1>
+			<div id="tabBoxLeft" class="left">
+				<div class="tab">
+				    <button id="tabButton1" class="tablinks" onclick="openTab(event, 'tabContent1')">Front of the House</button>
+				    <button class="tablinks" onclick="openTab(event, 'tabContent2')">The Lost Time-traveler</button>
+				    <button class="tablinks active" onclick="openTab(event, 'tabContent3')">Rome's Mansion</button>
+				</div>
+			</div>
+			<div id="tabContentRight" class="right">
+			    <div id="tabContent1" class="tabcontent" style="display: none;">
+			        <h2>Front of the House</h2>
+			        <h2 style="font-size: 14px">Simulation Game</h2><br>
+			        <img class="gameTabImages" src="./images/frontofthehousescreenshot.png"><img class="gameTabImages" src="./images/frontofthehousescreenshot2.png">
+			        <p class="tabText"><a href="https://cryocannon9.itch.io/front-of-the-house" target="_blank">Click Here to Play</a><br><br>
+			        Front of the House is a relaxing bakery simulator where you bake goods, manage inventory, and serve customers through a 2D UI.<br><br>
+			        Inspired by my job at an actual bakery, I first built this simulation game in one week in Twine. This second version, built with GameMaker, was created with the focus of improving my pixel art and UI/UX skills.
+			        </p>
+			    </div>
+			    <div id="tabContent2" class="tabcontent" style="display: none;">
+			        <h2>The Lost Time-traveler</h2>
+			        <h2 style="font-size: 14px">Interactive Fiction</h2>
+			        <p class="tabText"><a href="https://landonm.000webhostapp.com/Final/inf362final.php" target="_blank">Click Here to Play</a><br><br>
+			        You wake up in a shipping container, consoles and screens lining the walls. You find a note informing you that you're a time-traveler - it's up to you to decide where to go.<br><br>
+			        This is a game/story I created as my final for Intermediate Interactive Design at UAlbany as a Junior. Throughout the game, the user is prompted with several decisions that change the ending of the story. I constructed the story around these decisions using narrative bits -  nonsequential story beats and exposition - that relied on the context of the others to form a cohesive ending.
+			        </p>
+			    </div>
+			    <div id="tabContent3" class="tabcontent" style="display: block;">
+			        <h2>Rome's Mansion</h2>
+			        <h2 style="font-size: 14px">2D Story RPG - In Progress</h2>
+			        <div id="images" style="display: flex; justify-content: space-around;">
+			            <img class="gameTabImages2" src="./images/rm_screenshot1.png" style="width: 40%;"><img class="gameTabImages2" src="./images/rm_screenshot2.png" style="width: 40%;">
+			        </div>
+			        <p class="tabText">
+			            One day, Rome ventures into the winding halls of his own mind...<br><br>
+			            What if we could enter the mansion of our minds, becoming the master, taking control of all our emotions, desires, and fears? <i>Rome's Mansion</i> is a passion project of mine, focusing on bringing together the aspects of storytelling and game design I've gathered through my time at college. As you explore the realm of Rome's dreams, you'll fight enemies with the power of darkness, bless them with loving light, or take both paths at once: you decide the fate of Rome's Mansion.<br><br>
+			        </p>
+			    </div>
+			    <div id="tabContent4" class="tabcontent" style="display: none;">
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="row footer">
+		<p>Landon McConnell, UAlbany 2024</p>
+	</div>
+</body></html>

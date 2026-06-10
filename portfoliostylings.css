@@ -1,0 +1,634 @@
+@import url(../images/css.bin);
+@import url(../images/css.bin);
+@import url(../images/css.bin);
+@import url(../images/css.bin);
+
+/* Utility styles */
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+}
+.row:after,
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+}
+html {
+}
+
+p a:link {
+    color:  #009999;
+}
+
+p a:visited {
+    color: #737373;
+}
+
+p a:hover {
+    color:  #00cccc;
+}
+
+/* End utility styles */
+
+/* Header styles */
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+header {
+    background: black;
+	padding: .5em;
+	display: block;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#extraHeaderDiv {
+    display: none;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.hdrcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-size: 1.8em;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: normal;
+    display: block;
+}
+
+#hdrtitle {
+    float:left;
+    margin-left: 20px;
+    transition: .3s;
+    width: 539px;
+}
+
+#peacetobalanceheadermobile {
+    display: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+nav li {
+    display:inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    
+    position: relative;
+    
+}
+
+#resumeTab {
+    margin-right: 10px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Silkscreen", sans-serif;
+}
+
+nav a:hover {
+    color: #00f9ff;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #00f9ff;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    
+    transition: all ease-in-out 250ms;
+}
+
+#uiuxTab a:hover {
+    color: #9562ff;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* End header styles */
+
+/* Main styles */
+
+.pageh1 {
+    text-align: center; 
+    color: #000000; 
+    padding-bottom: 20px; 
+    border-bottom: 5px solid;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactDiv2 {
+    padding-bottom: 20px;
+}
+
+.contactDiv img {
+    width: auto;
+    height: auto;
+}
+
+#contactBox {
+    width: 25%;
+    text-align: center;
+    position: relative;
+    left: 4.2em;
+    float: left;
+}
+
+#storygameimage {
+    position: relative; 
+    left: 4%;
+}
+
+#rmimage {
+    position: relative; 
+    left: 2em;
+}
+
+#rmimageMobile {
+    display: none;
+}
+    
+#storygameimageMobile {
+    display: none;
+}
+
+.gameTabImages {
+    width: 48%; 
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+#uiuximg1 {
+    width: 40%;
+    padding: 10px;
+}
+
+.uiuximages {
+    width: 30%;
+    padding: 10px;
+}
+
+.italics {
+	font-style:italic;
+}
+
+p {
+	font-size: 1em;
+	font-family: "Jost", sans-serif;
+	padding: 1em;
+}
+
+.smallText {
+	font-size: .9em;
+}
+
+.tab {
+    overflow: hidden;
+    border: 3px solid #FFFFFF;
+}
+
+.tab button {
+    width: 100%;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 18px;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.tab button:hover {
+    color: #00f9ff;
+    text-decoration: underline;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00f9ff, 0 0 40px #00f9ff, 0 0 50px #00f9ff, 0 0 60px #00f9ff, 0 0 70px #00f9ff;
+}
+
+.tab button.active {
+    color: #00f9ff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00f9ff, 0 0 40px #00f9ff, 0 0 50px #00f9ff, 0 0 60px #00f9ff, 0 0 70px #00f9ff;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabText {
+    text-align: center;
+    border: 0;
+}
+
+#aboutText1 {
+    padding: 0;
+    position: relative;
+    width: 60%;
+    float: left;
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 0;
+}
+
+
+.colorAnimate {
+    color: aqua;
+    animation: colorAnimate 2s linear;
+}
+
+.colorAnimate1 {
+    color: white;
+    animation: colorAnimate 1.8s linear 2s 2 alternate;
+}
+
+.colorAnimate2 {
+    color: white;
+    animation: colorAnimate 1.8s linear 4s 2 alternate;
+}
+
+.colorAnimate3 {
+    color: white;
+    animation: colorAnimate 1.8s linear 6s 2 alternate;
+}
+
+@keyframes colorAnimate {
+    0% {
+        color: white;
+    }
+    100% {
+        color: aqua;
+    }
+}
+
+#aboutText2 {
+    padding: 1em;
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#aboutText3 {
+    width: 90%;
+    float: left;
+    border: 3px black solid;
+    padding: 1em;
+    
+}
+
+#aboutText4 {
+    width: 90%;
+    border: 3px black solid;
+    float: left;
+    padding: 1em;
+}
+
+#aboutText5 {
+    width: 90%;
+    border: 3px black solid;
+    padding: 1em;
+    font-size: .8em;
+}
+
+.textblock {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.textblock p {
+    color: #000;
+}
+
+.buttons {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	width: 100%
+}
+
+.right p {
+    font-family: "Jost", sans-serif;
+    line-height: 2.0;
+}
+
+.right {
+    width: 80%;
+    float: right;
+}
+
+.bonus {
+    width: 100%;
+    float: left;
+    justify-content: center;
+    background-color: black;
+}
+
+#bonusDiv3 {
+    width: 50%;
+    float: right;
+}
+
+#tabBoxLeft {
+    width: 15%; 
+    background-color:#000000; 
+    float: left;
+}
+
+#tabContentRight {
+}
+
+/* End main right styles */
+
+/* Footer styles */
+
+.footer {
+	background-color: black;
+	text-align: center;
+	width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    position: static;
+}
+
+.footer p {
+	color: white;
+	font-size: .8em;
+}
+
+/* End footer styles */
+
+@media (max-width: 1780px){
+    
+    /* abouttext 1 and 2 go to 100% width */
+    
+    #aboutText1 {
+        width: 100%;
+    }
+    
+    #aboutText2 {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:1520px){
+    /* textblocks go to 100% width, add to textblocks justify content: center, remove right: from abouttext/images, remove height: from abouttext, abouttext 1 and 2 go to 80% width*/
+    
+    nav li {
+        margin-left: 40px;
+    }
+    
+    #hdrtitle {
+        width: 419px;
+    }
+    
+    .textblock {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #bonusDiv3 {
+        width: 100%;
+    }
+    
+    #textblock1 {
+        justify-content: center;
+    }
+    
+    #textblock2 {
+        justify-content: center;
+    }
+    
+    #textblock3 {
+        justify-content: center;
+    }
+    
+    #textblock4 {
+        justify-content: center;
+    }
+    
+    /* bonus text stuff */
+}
+
+@media (max-width:1380px){
+	/* */
+	
+	#resumeTab {
+	    margin-right: 0px;
+	}
+	
+	#hdrtitle {
+	    width: 409px;
+	}
+	
+	#contactBox {
+	    left: 0;
+	    width: 35%;
+	}
+    
+    #rmimage {
+        width: 210px;
+        left: 0;
+    }
+    
+    #storygameimage {
+        width: 210px;
+        left: 0;
+    }
+    
+    #uiuximg1 {
+        width: 75%;
+    }
+    
+    .uiuximages {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 1260px) {
+    #headerDiv {
+        display: none;
+    }
+    
+    #extraHeaderDiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #peacetobalanceheadermobile {
+        display: block;
+    }
+    
+    #peacetobalanceheader {
+        display: none;
+    }
+    
+    #aboutTab {
+        margin-left: 0px;
+    }
+    
+    #hdrtitle {
+        width: auto;
+        margin-left: 0px;
+    }
+    
+    nav {
+        width: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .gameTabImages {
+        margin-left: 0px;
+    }
+    
+    #tabBoxLeft {
+        width: 100%;
+    }
+    
+    #tabContentRight {
+        width: 100%;
+    }
+    
+    .tab button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .gameTabImages {
+        width: 100%;
+    }
+    
+    nav li {
+        margin-left: 30px;
+    }
+    
+    #peacetobalancegif {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #cryocannongif1 {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #rmimage {
+        display: none;
+    }
+    
+    #storygameimage {
+        display: none;
+    }
+    
+    #contactBox {
+        width: 100%;
+    }
+    
+    #rmimageMobile {
+        display: block;
+        width: 40%;
+        left: 0;
+    }
+    
+    #storygameimageMobile {
+        display: block;
+        float: left;
+        width: 40%;
+        left: 0;
+        height: auto;
+    }
+    
+    #uiuximg1 {
+        width: 100%;
+    }
+    
+    .uiuximages {
+        width: 100%;
+    }
+    
+    .contactDiv2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
